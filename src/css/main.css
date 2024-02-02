@@ -11,10 +11,24 @@
 
 body {
     height: 100%;
+    background-color: var(--light-dorminant);
+    color: var(--light-text);
+}
+
+body.dark {
+    height: 100%;
+    background-color: var(--dark-dorminant);
+    color: var(--dark-text);
 }
 
 :root {
     --dom-green: rgb(1, 92, 1);
+    --dark-dorminant: #111315;
+    --dark-secondary: #343a40;
+    --dark-text: #f8f9fa;
+    --light-dorminant: #f8f9fa;
+    --light-secondary: #eaf5ff;
+    --light-text: #1d1d1d;
 }
 
 /* ==== Common CSS ==== */
@@ -188,31 +202,60 @@ body {
     font-size: 0.1rem;
 }
 
-.toggle-switch {
+#toggle-switch {
     width: 100%;
     max-width: 100%;
     min-height: 1.7rem;
     background-color: gray;
     padding: 0.2rem;
     border-radius: 1.5rem;
+    display: flex;
+}
+
+#toggle-switch.active{
+    width: 100%;
+    max-width: 100%;
+    min-height: 1.7rem;
+    background-color: gray;
+    padding: 0.2rem;
+    border-radius: 1.5rem;
+    display: flex;
 }
 
 .toggle-switch-button {
-    position: relative;
     background-color: var(--dom-green);
     padding: 0.2rem;
     height: 1.3rem;
     width: 1.3rem;
     border-radius: 50% 50%;
     box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.8);
-}
-
-.toggle-switch-button::before {
-    position: absolute;
-    transform: translate(10%, 0%);
     transition: all 0.4s ease;
+    transform: translate(10%, 0%);
 }
 
-body.dark .toggle-switch-button::before {
-    transform: translate(140%, 0%) !important;
+#toggle-switch.active .toggle-switch-button {
+    background-color: var(--dom-green);
+    padding: 0.2rem;
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50% 50%;
+    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.8);
+    transition: all 0.4s ease;
+    transform: translate(130%, 0%);
+}
+
+#toggle-switch.active .toggle-switch-button #major {
+    display: none;
+}
+
+#toggle-switch.active .toggle-switch-button #hide {
+    display: block;
+}
+
+#toggle-switch .toggle-switch-button #major {
+    display: block;
+}
+
+#toggle-switch .toggle-switch-button #hide {
+    display: none;
 }
