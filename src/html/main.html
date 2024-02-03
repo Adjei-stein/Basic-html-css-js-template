@@ -11,16 +11,33 @@
         
     </head>
     <body>
-        <nav class="side-nav max-h-100">
-            <header class="side-bar-header max-h-10">
+        <nav class="top-nav min-max-w-100 min-max-h-10">
+            <div class="display-flex min-max-h-100 min-max-w-100">
                 <div class="image-text-side-nav">
-                    <img src="..\..\img\joker-in-cop-car.jpg" alt="Simple Image" width="50" height="50"/>
+                    <img src="..\..\img\joker-in-cop-car.jpg" alt="Simple Image" width="20" height="20"/>
                     <div class="template-title flex-items-exact-center">
                         <h3 class="template-title-header-3">First Template</h3>
                     </div>
                 </div>
-                <i class='bx bx-chevron-right toggle'></i>
-            </header>
+                <!-- <i class='bx bx-chevron-right toggle'></i> -->
+                <div class="side-nav-theme-setting display-flex" style="float: right;">
+                    <div class="">
+                        <span class="side-nav-button-span-tag">Themes</span>
+                    </div>
+                    <div class="toggle-area min-max-w-10">
+                        <div id="toggle-switch" class="">
+                            <div class="toggle-switch-button flex-items-exact-center">
+                                <i id="major" class="fa fa-moon-o side-nav-list-footer-text toggle-switch-button-logo" aria-hidden="true"></i>
+                                <i id="hide" class="fa fa-sun-o side-nav-list-footer-text toggle-switch-button-logo" aria-hidden="true"></i>
+                                <!-- <i class="fa fa-sun-o" aria-hidden="true"></i> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="side-nav max-h-100">
+            
             <div class="side-nav-list">
                 <ul class="side-nav-list-group">
                     <div class="side-nav-list-headers flex-items-vertical-center-horizontal-left">
@@ -60,22 +77,10 @@
                         <a class="side-nav-list-option-anchor black-text flex-items-exact-center min-max-w-100" href="#"><div class="side-nav-button-i-tag"><i class="fa fa-sign-out" aria-hidden="true"></i></div><span class="side-nav-button-span-tag">Logout</span></a>
                     </li>
                 </ul>
-                <div class="side-nav-theme-setting flex-items-exact-center min-max-w-100">
-                    <div class="min-max-w-60">
-                        <span class="side-nav-button-span-tag">Themes</span>
-                    </div>
-                    <div class="toggle-area min-max-w-40">
-                        <div id="toggle-switch" class="">
-                            <div class="toggle-switch-button flex-items-exact-center">
-                                <i id="major" class="fa fa-moon-o side-nav-list-footer-text toggle-switch-button-logo" aria-hidden="true"></i>
-                                <i id="hide" class="fa fa-sun-o side-nav-list-footer-text toggle-switch-button-logo" aria-hidden="true"></i>
-                                <!-- <i class="fa fa-sun-o" aria-hidden="true"></i> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </nav>
+        
         <script src="..\js\main.js"></script>
     </body>
 </html>
