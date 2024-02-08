@@ -254,13 +254,13 @@ h1,h2,h3,h4,h5 {
     display: none;
 }
 
-/* .side-nav:hover .side-nav-list .side-nav-list-group .side-nav-list-option .side-nav-list-option-anchor .side-nav-button-span-tag {
+.side-nav:hover .side-nav-list .side-nav-list-group .side-nav-list-option .side-nav-list-option-anchor .side-nav-button-span-tag {
     display: block;
 }
 
 .side-nav:hover {
     width: 10rem;
-} */
+}
 
 .header-titles{
     display: none;
