@@ -5,7 +5,11 @@ body, html {
     font-family: 'Poppins', sans-serif;
     margin: 0%;
     padding: 0%;
-    
+    background-image: url("../../img/toys-pic-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 body {
@@ -30,7 +34,7 @@ body.dark {
     --sun-color: #FDB813;
 }
 
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4,h5,p {
     margin: 0;
 }
 
@@ -46,11 +50,79 @@ h1,h2,h3,h4,h5 {
     align-items: center;
     justify-content: center;
     max-width: fit-content;
+    margin: 1rem;
 }
 
 .container-dashboard {
     height: 100%;
     width: 100%;
-    padding: 2rem;
-    max-width: 90%;
+    max-width: fit-content;
+    max-height: 100%;
+}
+
+.container-whiteboard {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+    background-color: aliceblue;
+    padding: 1.5rem;
+}
+
+.container-transparentboard {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+.center-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+.dashboard-welcome {
+    margin: 1.5rem;
+    font-size: 5em;
+    text-align: center;
+    color: #eaf5ff;
+}
+
+.dashboard-advert-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #111315;
+    padding: 1.5rem 0;
+    font-size: 1.2em;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.dashboard-advert-sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #111315;
+    margin: 0.5rem 0;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+
+.btn-blue {
+    background-color: blue;
+}
+
+.btn-br-0 {
+    border: none;
+    border-radius: 0;
+    padding: 0.5rem;
 }
