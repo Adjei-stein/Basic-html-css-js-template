@@ -45,11 +45,17 @@ h1,h2,h3,h4,h5,p {
     
 }
 
+.no-shadow-card {
+    padding: 1rem;
+    border-radius: none;
+    background-color: rgb(233, 232, 232);
+    margin: 1rem;
+}
+
 .container-row {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: fit-content;
     margin: 1rem;
 }
 
@@ -60,11 +66,16 @@ h1,h2,h3,h4,h5,p {
     max-height: 100%;
 }
 
+.container-b-0-div {
+    bottom: 0;
+    width: 100%;
+    max-width: fit-content;
+}
+
 .container-whiteboard {
     width: 100%;
-    max-width: 100%;
-    margin: 1rem 0;
-    background-color: aliceblue;
+    max-width: fit-content;
+    background-color: white;
     padding: 1.5rem;
 }
 
@@ -125,4 +136,34 @@ h1,h2,h3,h4,h5,p {
     border: none;
     border-radius: 0;
     padding: 0.5rem;
+}
+
+.row-d-center {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.circle-2rem {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: rgb(197, 79, 10);
+}
+
+.grow-flex-item-1 {
+    flex-grow: 1;
+}
+
+.center-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-shadow-card-text-div {
+    margin: 1rem;
+    text-align: center;
 }
