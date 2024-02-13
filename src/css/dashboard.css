@@ -167,3 +167,18 @@ h1,h2,h3,h4,h5,p {
     margin: 1rem;
     text-align: center;
 }
+
+body.dark .container-dashboard .container-b-0-div .container-whiteboard {
+    width: 100%;
+    max-width: fit-content;
+    background-color: var(--dark-dorminant);
+    padding: 1.5rem;
+}
+
+body.dark .container-dashboard .container-b-0-div .container-whiteboard p {
+    color: var(--dark-text);
+}
+
+body.dark .no-shadow-card {
+    background-color: var(--dark-secondary);
+}
