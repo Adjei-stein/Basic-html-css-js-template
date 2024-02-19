@@ -1,0 +1,132 @@
+/* Imported Google Poppins Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    /* background-image: url("../../img/toys-pic-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+html {
+    height: 100%;
+    max-height: 100%;
+}
+
+body {
+    background-color: var(--light-dorminant);
+    color: var(--light-text);
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.dark {
+    background-color: var(--dark-dorminant);
+    color: var(--dark-text);
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:root {
+    --dom-green: rgb(1, 92, 1);
+    --dark-dorminant: #111315;
+    --dark-primary: #333;
+    --dark-secondary: #343a40;
+    --dark-text: #f8f9fa;
+    --light-dorminant: #f8f9fa;
+    --light-secondary: #eaf5ff;
+    --light-text: #1d1d1d;
+    --sun-color: #FDB813;
+}
+
+h1,h2,h3,h4,h5,p {
+    margin: 0;
+}
+
+.container-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.container-login {
+    height: 100%;
+    width: 100%;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+
+.shadow-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    
+}
+
+.no-shadow-card {
+    padding: 1rem;
+    border-radius: none;
+    background-color: rgb(233, 232, 232);
+    margin: 1rem;
+}
+
+.login-input-fields {
+    margin: 1rem;
+}
+
+.no-shadow-card-label-username, .no-shadow-card-input-username {
+    display: block;
+}
+
+.no-shadow-card-label-password, .no-shadow-card-input-password {
+    display: block;
+}
+
+.no-shadow-card-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-view-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.curved-edge {
+    height: 1.5rem;
+    border-radius: 1rem;
+    border: 1px #1d1d1d solid;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 0.5rem;
+}
+
+.no-focus:focus {
+    outline: none;
+}
+
+.no-focus{
+    border: none;
+    background-color: #333;
+    
+}
